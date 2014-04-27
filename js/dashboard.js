@@ -83,10 +83,10 @@ function drawSleepQualityGraph(dataIndex) {
 			text: 'Sleep Quality'
 		},
 		subtitle: {
-			text: 'For experiment: H.I.I.T in the morning'
+			text: 'For experiment: '+localStorage.challenge
 		},
 		xAxis: {
-			categories: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7', 'Day 8', 'Day 9', 'Day 10', 'Day 11', "Day 12", "Day 13", "Day 14"]
+			categories: ['Day 1 [x]', 'Day 2 [x]', 'Day 3 [x]', 'Day 4 [x]', 'Day 5 [x]', 'Day 6 [x]', 'Day 7 [x]', 'Day 8 [ ]', 'Day 9 [x]', 'Day 10 [x]', 'Day 11 [ ]', "Day 12 [x]", "Day 13 [x]", "Day 14 [x]"]
 		},
 		yAxis: {
 			title: {
@@ -145,3 +145,4 @@ function fadeToColor(rgbColor1, rgbColor2, ratio) {
 
     return 'rgb(' + newColor + ')';
 }
+$('.navbar-toggle').click( function(){$('.navbar-collapse').toggleClass('collapse')} )
