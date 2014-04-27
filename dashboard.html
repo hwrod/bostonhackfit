@@ -30,10 +30,10 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
 						<li><a href="checkin.html">Check In</a></li>
-						<li><a href="dashboard.html">Dashboard</a></li>
+						<li><a href="dashboard.html" class="disabled" style="color: #555">Dashboard</a></li>
 						<li><a href="settings.html">Settings</a></li>
+						<li><a href="index.html">Logout</a></li>
 					</ul>
 					<form class="navbar-form navbar-right">
 						<input type="text" class="form-control" placeholder="Search..." oninput="if ($(this).val()) $('.main').slideUp(); else $('.main').slideDown()">
@@ -47,7 +47,7 @@
 				<div class="col-sm-3 col-md-2 sidebar">
 					<ul class="nav nav-sidebar">
 						<li class="active"><a href="#sleepquality">Sleep Quality</a></li>
-						<li><a href="#yourperformance">Your Performance</a></li>
+						<li><a href="#yourperformance">Your Data</a></li>
 						<li><a href="#analytics">Analytics</a></li>
 						<li><a href="#">Export</a></li>
 					</ul>
@@ -63,7 +63,7 @@
 					<!-- Table -->
 					<a id="yourperformance"></a>
 					<br><br><br>
-					<h2 class="sub-header">Your Performance</h2>
+					<h2 class="sub-header">Your Data</h2>
 					<div class="table-responsive">
 						<table class="table table-striped">
 							<thead>

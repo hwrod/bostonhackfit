@@ -37,7 +37,19 @@
 					<h3>So, how was your sleep?</h3>
 					<p id="description"></p>
 					<script>
-						localStorage.setItem("description", ["On a scale from watching reality TV to completing a Spartan Race:", "On a scale from eating bananas to rock paper scissors:"]);
+						localStorage.setItem("description", ["On a scale from watching reality TV to completing a Spartan Race:",
+								
+"On a scale from \"Adam's Song\" to \"Damnit (What's My Age Again?)\":",
+"On a scale from \"A Perfect Circle\" to \"Girl Talk\":",
+"On a scale from \"couch potato\" to \"CrossFit champion\":",
+"On a scale from \"Subway\" to \"Alinea\":",
+"On a scale from \"Bud Light\" to \"Green Chartreuse\":",
+"On a scale from \"K-Mart\" to \"Warby Parker\":",
+"On a scale from \"Green Line\" to \"Maglev train\":",
+"On a scale from \"Payless\" to \"Air Jordan's\":",
+"On a scale from 'Super 8\" to \"Mandarin Oriental\":",
+								
+								]);
 						localStorage.descNum = parseInt(localStorage.descNum)+1;
 						desc = localStorage.getItem("description").split(",");
 						desc = desc[localStorage.descNum%(desc.length)];
