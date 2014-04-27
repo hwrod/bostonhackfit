@@ -21,9 +21,14 @@
 
 	</style>
 	<script>
+		function go(){
+			setTimeout( function(){ $("h1").addClass("animation"); }, 2000);
+			setTimeout( function(){window.location = "wakeup.html"}, 2000+6000);
+		}
 		$(document).ready(function () {
-			setTimeout( function(){ $("h1").addClass("animation"); }, 2500);
-			setTimeout( function(){window.location = "wakeup.html"}, 2500+12000);
+			go();
+			$("body,h1").click(function(){window.location = "wakeup.html"});
+			$(document).click(function(){window.location = "wakeup.html"});
 		});
 	</script>
 
@@ -48,8 +53,8 @@
 				white-space: nowrap;
 			}
 			.animation {
-				-webkit-transition: all 12s; /* For Safari 3.1 to 6.0 */
-				transition: all 12s;
+				-webkit-transition: all 10s; /* For Safari 3.1 to 6.0 */
+				transition: all 10s;
 				-moz-transform: rotate(360deg);
 				-webkit-transform: rotate(360deg);
 				-o-transform: rotate(360deg);

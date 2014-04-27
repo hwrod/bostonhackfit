@@ -41,15 +41,22 @@
 						localStorage.descNum = parseInt(localStorage.descNum)+1;
 						desc = localStorage.getItem("description").split(",");
 						desc = desc[localStorage.descNum%(desc.length)];
-						console.log(localStorage.descNum)
-						$("#description").text(desc);
+console.log(localStorage.descNum)
+	$("#description").text(desc);
 					</script>
 					<input id="moodSleepSlider" data-slider-id='moodSleepSlider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="80"/>
 				</div>
-
-				<div class="startSleep">
-					<button type="submit" class="btn btn-default">Begin my day!</button>
+				<!-- Note -->
+				<div class="moodNote">
+					<p>Write something interesting about your night:</p>
+					<input type="text" class="form-control" placeholder="Ex: had dreams about writing STREAM functions in Pig for loading data into Hadoop">
 				</div>
+
+				<!-- Go to Sleep button -->
+				<div class="startSleep">
+					<button type="submit" class="btn btn-primary form-control">I'm up!</button>
+				</div>
+
 			</form>
 
 		</div> <!-- /container -->
@@ -69,5 +76,6 @@
 				});
 			});
 		</script>
+		<style> body{background:none} </style>
 	</body>
 </html>

@@ -48,7 +48,8 @@ body { padding-bottom: 70px; }
         <h2>Who's going to hold you accountable?</h2>
         <!--<div class="btn-group">
             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> My friends <span class="caret"></span></button>-->
-			<input type="email" id="accountability" class="form-control" />
+			<h4 class="text-success"> Friend's e-mail: </h4>
+			<input type="email" id="accountability" class="form-control" placeholder="Email"/>
 			<!--
             <select class="form-control">
                 <option>Andie Acker</option>
@@ -62,43 +63,12 @@ body { padding-bottom: 70px; }
     <br>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Get my sleep on!</button>
       </form>
+	  <script>
+				$("#accountability").val( localStorage.accountability );
+				$("#challenge").val( localStorage.challenge );
+		  
+	  </script>
 
-
-
-<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="sleepbuddy.html">Buddy</a></li>
-        <li><a href="#">Check-in</a></li>
-        <li><a href="dashboard.html">Stats</a></li>
-      </ul>
-     
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<!--
-  <div class="collapse navbar-collapse navbar-fixed-bottom" role="navigation">
-    <ul class = "nav navbar-nav">
-      <li class="active"><a href="#">Buddy</a></li>
-      <li class="active"><a href="#">Check In</a></li>
-      <li class="active"><a href="#">Stats</a></li>
-    </ul>
-  </div>
--->
     </div> <!-- /container -->
   </body>
 </html>
