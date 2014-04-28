@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
     <title>Pick your Sleep Buddy</title>
     <script src="js/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!--<script src="js/jquery.min.js"></script>-->
     <script src="js/bootstrap/js/bootstrap.min.js"></script>
     <link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +31,15 @@ body { padding-bottom: 70px; }
             $heading.html(newHeading + ' ').append($caret);
 });*/
     });
+
+    $.ajax({
+        type: "POST",
+        url: "https://api.constantcontact.com/v2/contacts?action_by=ACTION_BY_OWNER&api_key=ugs5zk833t4qnhb7z5nugn43",
+        data: document.getElementById("accountability"),
+        success: null,
+        dataType: String
+    });
+
 </script>
 
 <body>
